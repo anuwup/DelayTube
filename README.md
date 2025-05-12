@@ -9,7 +9,6 @@ A Chrome extension that helps you watch intentionally, not impulsively.
 It gives you a second thought — a small nudge to ask:
 > “Do I really want to watch this now?”
 
----
 
 ## Features
 
@@ -19,8 +18,6 @@ It gives you a second thought — a small nudge to ask:
 - No external APIs, accounts, or data collection — works entirely on your local browser
 - Simple, clean, and fully customizable
 
----
-
 ## Options
 
 Click the **Extension Options** page to:
@@ -28,15 +25,14 @@ Click the **Extension Options** page to:
 * Enable/disable DelayTube per YouTube section
 * Add relaxation time windows (like *Sundays 3–5pm*) where clicking plays the video normally
 
----
+
 
 ## Chrome Web Store
 
-> *Coming soon* — or install from source using the instructions above.
+> *Coming soon*
 
----
 
 ## Privacy
 
 DelayTube stores all your preferences locally using Chrome's `sync` storage.
-It does **not** track, collect, or send *any* data anywhere.
+It does **not** track, collect, or send any data anywhere.
