@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DelayTube Options</title>
+        <link rel="icon" href="icons/icon48.png" type="image/png" />
+        <meta
+            name="description"
+            content="Customize your DelayTube behavior and relaxation times."
+        />
+        <meta name="theme-color" content="#e63946" />
+        <title>DelayTube Options</title>
+        <style>
+            :root {
+                font-family: system-ui, sans-serif;
+                --primary: #e63946;
+                --bg: #f4f5f6;
+                --border: #ccc;
+            }
+
+            body {
+                background: var(--bg);
+                max-width: 700px;
+                margin: 3rem auto;
+                padding: 2rem;
+                border-radius: 8px;
+                border: 1px solid var(--border);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            }
+
+            h1 {
+                margin-top: 0;
+                font-size: 2rem;
+                color: var(--primary);
+            }
+
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+            }
+
+            input[type="checkbox"] {
+                margin-right: 0.5rem;
+            }
+
+            h2 {
+                margin-top: 2rem;
+                font-size: 1.5rem;
+            }
+
+            select,
+            input[type="time"] {
+                margin: 0.25rem 0 1rem;
+                padding: 0.3rem 0.5rem;
+                font-size: 1rem;
+                border: 1px solid var(--border);
+                border-radius: 4px;
+                background: white;
+            }
+
+            button {
+                margin-top: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 4px;
+                background: var(--primary);
+                color: white;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #d62839;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            li {
+                background: white;
+                padding: 0.6rem;
+                margin: 0.4rem 0;
+                border: 1px solid var(--border);
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            li button {
+                background: #888;
+                font-size: 0.85rem;
+                padding: 0.3rem 0.7rem;
+            }
+
+            li button:hover {
+                background: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>DelayTube</h1>
+        <p>Add to Watch Later when clicking on videos on these pages:</p>
+        <label><input type="checkbox" id="dt-home" /> Home</label>
+        <label
+            ><input type="checkbox" id="dt-subscriptions" />
+            Subscriptions</label
+        >
+        <label><input type="checkbox" id="dt-search" /> Search Results</label>
+        <label><input type="checkbox" id="dt-channel" /> Channel Pages</label>
+        <label><input type="checkbox" id="dt-playlists" /> Playlists</label>
+
+        <h2>Relaxation Periods</h2>
+        <div id="relaxation-form">
+            <label
+                >Days:
+                <select multiple id="days">
+                    <option value="Daily">Daily</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </label>
+            <br />
+            <label
+                >Start Time:
+                <input type="time" id="start-time" />
+            </label>
+            <label
+                >End Time:
+                <input type="time" id="end-time" />
+            </label>
+            <br />
+            <button id="add-relaxation">Add</button>
+        </div>
+
+        <ul id="relaxation-list"></ul>
+        <script src="./options.js"></script>
+    </body>
+</html>
