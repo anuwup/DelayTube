@@ -1,14 +1,11 @@
 # DelayTube
 A Chrome extension that helps you watch intentionally, not impulsively.
 
----
-
 ## What is this?
 
 **DelayTube** intercepts your YouTube clicks and saves the video to your **Watch Later** playlist instead of playing it immediately.
 It gives you a second thought — a small nudge to ask:
 > “Do I really want to watch this now?”
-
 
 ## Features
 
@@ -24,15 +21,3 @@ Click the **Extension Options** page to:
 
 * Enable/disable DelayTube per YouTube section
 * Add relaxation time windows (like *Sundays 3–5pm*) where clicking plays the video normally
-
-
-
-## Chrome Web Store
-
-> *Coming soon*
-
-
-## Privacy
-
-DelayTube stores all your preferences locally using Chrome's `sync` storage.
-It does **not** track, collect, or send any data anywhere.
