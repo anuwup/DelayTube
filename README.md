@@ -1,4 +1,5 @@
 # DelayTube
+
 A Chrome extension that helps you watch intentionally, not impulsively.
 
 ## What is this?
@@ -19,5 +20,5 @@ It gives you a second thought — a small nudge to ask:
 
 Click the **Extension Options** page to:
 
-* Enable/disable DelayTube per YouTube section
-* Add relaxation time windows (like *Sundays 3–5pm*) where clicking plays the video normally
+- Enable/disable DelayTube per YouTube section
+- Add relaxation time windows (like *Sundays 3–5pm*) where clicking plays the video normally
